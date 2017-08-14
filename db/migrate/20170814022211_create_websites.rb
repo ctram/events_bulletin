@@ -3,7 +3,7 @@ class CreateWebsites < ActiveRecord::Migration[5.1]
     create_table :websites do |t|
       t.string        :name
       t.string        :url
-      t.hash          :css_mapping
+      t.json          :css_mapping
       t.timestamps
     end
   end
